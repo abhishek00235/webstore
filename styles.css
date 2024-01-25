@@ -1,0 +1,85 @@
+/* General background */
+body {
+    background-color: #2a2b2d; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 400px; /* Fixed height */
+    width: 400px; /* Fixed width */
+}
+
+/* Style for the chat container */
+#chatContainer {
+    height: calc(100% - 40px); /* Adjusted height considering input box height */
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #1e1f21; /* Slightly different dark shade for contrast */
+}
+
+/* Style for messages */
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Differentiate between user and AI messages */
+.userMessage {
+    background-color: #4a90e2; /* Slightly lighter shade for user messages */
+    text-align: right;
+}
+
+.aiMessage {
+    background-color: #57595d; /* Dark grey for AI messages */
+}
+
+/* Style for input and button */
+#userInput, #sendButton {
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    padding: 0 10px;
+}
+
+#userInput {
+    width: calc(100% - 90px); /* Adjust width to fit the button */
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#sendButton {
+    width: 60px;
+    background-color: #4a90e2; /* Same as user message color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style for code blocks */
+.message pre {
+    background-color: #333; /* Darker background for code */
+    color: #f1f1f1; /* Light text for code */
+    /* Rest of the code style remains the same */
+}
+
+/* Loading indicator style */
+.fa-spinner {
+    color: #4a90e2; /* Color for spinner */
+}
+
+/* Scrollbar style (optional) */
+#chatContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+#chatContainer::-webkit-scrollbar-track {
+    background: #1e1f21;
+}
+
+#chatContainer::-webkit-scrollbar-thumb {
+    background: #57595d;
+}

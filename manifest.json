@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT-like Extension",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "http://localhost:8080/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
