@@ -83,3 +83,47 @@ body {
 #chatContainer::-webkit-scrollbar-thumb {
     background: #57595d;
 }
+.sidebar-enabled #chatContainer {
+    width: 300px; /* Adjust the width as needed */
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+.sidebar-enabled #inputContainer {
+    display: none; /* Hide the input container in sidebar mode */
+}
+
+.sidebar-enabled #toggleSidebar {
+    display: none; /* Hide the checkbox in sidebar mode if needed */
+}
+/* Add this to your existing styles.css */
+
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #4a90e2; /* Example color, customize as needed */
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+/* Style for sidebar mode */
+.sidebar-enabled #chatContainer {
+    width: 300px; /* Adjust the width as needed */
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+.sidebar-enabled #inputContainer {
+    display: none; /* Hide the input container in sidebar mode */}
